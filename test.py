@@ -37,3 +37,61 @@ i=0
 for i in range(9,0,-1):
     print("%d X %d = %4d"%(15,i,15*i))
 
+
+nn=[100,200,300,400,500]
+print(nn)
+print(nn[4])
+
+#함수(전역변수)
+'''
+def func1():
+    global a
+    a= 10
+    print("func1()에서 a의 값은:%d" % a)
+
+    
+def func2():
+    print("func2()에서 a의 값은:%d" % a)
+
+
+
+a=20
+
+func1() 
+func2()
+'''
+'''
+def func1(v1,v2,v3=0):
+    a=v1
+    b=v2
+    lista=[]
+    lista.append(a)
+    lista.append(b)
+    return a,b
+
+
+c=[]
+c=list(func1(10,20))
+print(c)
+''' 
+def func1(v1):
+    v1[0]=100
+    return 10, 'ada', 20
+
+
+a=[10,20]
+b=func1(a)
+print(a)
+print(b)
+'''
+#한글과 영문자들만 남겨주기(250p,11번)
+
+str1=input("글을 입력하세요:")
+str2=''
+strlen=len(str1)
+for i in range(0,strlen):
+    if str1[i].isalpha():
+         str2 +=str1[i]
+
+print(str2)
+'''
